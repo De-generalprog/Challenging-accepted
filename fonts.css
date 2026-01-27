@@ -1,3 +1,6 @@
+/* ============================================================
+   FONT DEFINITIONS
+   ============================================================ */
 
 .bitter-<uniquifier> {
   font-family: "Bitter", serif;
@@ -5,125 +8,157 @@
   font-weight: <weight>;
   font-style: normal;
 }
-.crimson-text-regular {
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.crimson-text-semibold {
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.crimson-text-bold {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.crimson-text-regular-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.crimson-text-semibold-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.crimson-text-bold-italic {
-  font-family: "Crimson Text", serif;
-  font-weight: 700;
-  font-style: italic;
-}
 .rubik-storm-<uniquifier> {
   font-family: "Rubik Storm", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-/* CSS Document */
-.html body,
-{    height: 100%;
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.6;}
-body  {
-    font-family: 'Crimson Text', serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.crimson-text-regular { font-family: "Crimson Text", serif; font-weight: 400; font-style: normal; }
+.crimson-text-semibold { font-family: "Crimson Text", serif; font-weight: 600; font-style: normal; }
+.crimson-text-bold { font-family: "Crimson Text", serif; font-weight: 700; font-style: normal; }
+.crimson-text-regular-italic { font-family: "Crimson Text", serif; font-weight: 400; font-style: italic; }
+.crimson-text-semibold-italic { font-family: "Crimson Text", serif; font-weight: 600; font-style: italic; }
+.crimson-text-bold-italic { font-family: "Crimson Text", serif; font-weight: 700; font-style: italic; }
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
 }
+
+body {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    padding: 20px;
-    flex-grow: 1;
-   background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: black;
 }
-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Rubik Storm', sans-serif;
-    font-size: 14px;
-    flex-direction: row;
-    content:space-between;
-    
-}
-nav button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #c5cae9;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    border-color: rgb(133, 95, 45);
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #c5cae9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
 
-} 
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Rubik Storm', sans-serif;
+  font-size: 14px;
+  flex-direction: row;
+  content: space-between;
+}
+
+nav button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: rgb(133, 95, 45);
+}
+
+/* ============================================================
+   CONTAINER & HEADER
+   ============================================================ */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5cae9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
 .text-regular {
-    font-family: 'Crimson Text', serif;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 40px;
-    
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+/* ============================================================
+   SEARCH BOX
+   ============================================================ */
+
+form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  font-size: 18px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+form button[type="submit"] {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form button[type="submit"]:hover {
+  opacity: 0.7;
+}
+
+/* ============================================================
+   SECTIONS & CARDS
+   ============================================================ */
+
 section {
-    justify-content: flex-start;
-    display: flex;
-    flex-flow: row wrap;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.card1 {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px;
-   width: 300px;
-   flex-direction: ;
-    
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 10px;
+  box-sizing: border-box;
 }
-.card2 {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
-    flex-direction: row;
-}
+
