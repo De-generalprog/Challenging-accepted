@@ -202,6 +202,15 @@ footer a {
   margin-top: 10px;
 }
 
+.icon-large {
+  font-size: 2em;
+  transform: rotate(120deg);
+  --primary-color: #6c3d3d;
+  --secondary-color: #d8e51f;
+  --primary-opacity: 0.9;
+  --secondary-opacity: 0.6;
+  style="--fa-primary-color: #6c3d3d; --fa-primary-opacity: 9; --fa-secondary-color: #d8e51f; --fa-secondary-opacity: 0.6; --fa-rotate-angle: 120deg;
+}
 /* ============================================================
    MOBILE RESPONSIVE
    ============================================================ */
