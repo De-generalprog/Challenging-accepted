@@ -83,8 +83,7 @@ nav button {
   justify-content: center;
   align-items: center;
   background-color: #c5cae9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(236, 233, 233, 0.1);
   padding: 40px 20px;
 }
 
@@ -94,7 +93,6 @@ nav button {
   text-align: center;
   margin-bottom: 20px;
 }
-
 /* ============================================================
    SEARCH BOX
    ============================================================ */
@@ -103,7 +101,7 @@ form {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 120%;
   max-width: 800px;
 }
 
