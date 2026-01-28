@@ -206,12 +206,17 @@ footer a {
 
 .icon-large {
   font-size: 2em;
-  transform: rotate(120deg);
+  transform: rotate(20deg);
   --primary-color: #6c3d3d;
   --secondary-color: #d8e51f;
   --primary-opacity: 0.9;
   --secondary-opacity: 0.6;
-  style="--fa-primary-color: #6c3d3d; --fa-primary-opacity: 9; --fa-secondary-color: #d8e51f; --fa-secondary-opacity: 0.6; --fa-rotate-angle: 120deg;
+  color: var(--primary-color);
+}
+.icon-large:hover {
+  color: var(--secondary-color);
+  opacity: var(--secondary-opacity);
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 /* ============================================================
    MOBILE RESPONSIVE
