@@ -7,6 +7,7 @@
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  font-size: 10px
 }
 
 .rubik-storm-<uniquifier> {
@@ -216,9 +217,9 @@ footer a {
    MOBILE RESPONSIVE
    ============================================================ */
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   html, body {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   section {
