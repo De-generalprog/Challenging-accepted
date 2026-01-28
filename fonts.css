@@ -174,6 +174,34 @@ section {
   padding: 50px;
   margin: 10px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.card1 i, .card2 i, .card3 i, .card4 i, .card5 i, .card6 i {
+  grid-column: 1;
+  grid-row: 1;
+  color: #1e88e5;
+}
+
+.card1 h2, .card2 h2, .card3 h2, .card4 h2, .card5 h2, .card6 h2 {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  margin: 0;
+}
+
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p {
+  grid-column: 1 / -1;
+}
+
+.card1 a, .card2 a, .card3 a, .card4 a, .card5 a, .card6 a {
+  grid-column: 1 / -1;
+}
+
+.icon-large {
+  font-size: 2.5rem;
 }
 .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
