@@ -51,6 +51,7 @@ nav {
   padding: 20px;
   flex-grow: 1;
   background-color: black;
+  justify-content: space-between;
  }
 
 nav a {
@@ -221,5 +222,5 @@ footer a {
   }
 
   section {
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
